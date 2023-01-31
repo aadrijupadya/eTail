@@ -5,10 +5,11 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-:root {
+
+ :root {
+  --primarydark: #c58940;
+  --primarymid: #f59e0f;
+  --primarylight: #faf8f1;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -6096,8 +6097,9 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FFD333 !important;
+  background-color: #134074 !important;
 }
+
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -6106,14 +6108,50 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #F5F5F5 !important;
+  background-color: #13315c !important;
 }
+
+
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
   background-color: gainsboro !important;
 }
+
+.bg-dark {
+  background-color: #0b2545 !important;
+}
+
+
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: gainsboro !important;
+} 
+
+.bg-light {
+  background-color: #8da9c4 !important;
+}
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: gainsboro !important;
+} 
+
+.bg-cream {
+  background-color: #F8F4FA !important;
+}
+
+a.bg-cream:hover, a.bg-cream:focus,
+button.bg-cream:hover,
+button.bg-cream:focus {
+  background-color: gainsboro !important;
+} 
+
+
 
 .bg-success {
   background-color: #28a745 !important;
@@ -6153,26 +6191,6 @@ a.bg-danger:hover, a.bg-danger:focus,
 button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important;
-}
-
-.bg-light {
-  background-color: #FFFFFF !important;
-}
-
-a.bg-light:hover, a.bg-light:focus,
-button.bg-light:hover,
-button.bg-light:focus {
-  background-color: #e6e6e6 !important;
-}
-
-.bg-dark {
-  background-color: #3D464D !important;
-}
-
-a.bg-dark:hover, a.bg-dark:focus,
-button.bg-dark:hover,
-button.bg-dark:focus {
-  background-color: #262c31 !important;
 }
 
 .bg-white {
@@ -9266,7 +9284,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FFD333 !important;
+  color: #134074 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9274,11 +9292,18 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #F5F5F5 !important;
+  color: #13315c !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
   color: #cfcfcf !important;
+}
+
+.text-cream {
+  color: #F8F4FA !important;
+}
+a.text-cream:hover, a.text-success:focus{
+  color: #d8ded7 !important;
 }
 
 .text-success {
@@ -9322,7 +9347,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .text-dark {
-  color: #3D464D !important;
+  color: #0b2545 !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
