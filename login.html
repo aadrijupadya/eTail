@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title> Etail Login/Signup </title>
     <link rel="stylesheet" href="css/style2.css">
+    <link href="css/style.css" rel="stylesheet">
     <script src="js/login2.js">
     </script>
 
@@ -12,11 +13,56 @@
 
 </head>
 
-<body>
+<body class="bg-cream">
+    <div class="container-fluid bg-cream mb-30">
+        <div class="row">
+
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-cream navbar-dark py-3 py-lg-0 px-0">
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <a href="index.html"><img src="img/logo.png"></a>
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="men.html" class="nav-item nav-link text-primary">Men</a>
+                            <a href="women.html" class="nav-item nav-link text-primary">Women</a>
+                            <a href="kids.html" class="nav-item nav-link text-primary">Kids</a>
+                            <a href="shoes.html" class="nav-item nav-link text-primary">Shoes</a>
+                            <a href="contact.html" class="nav-item nav-link text-primary">Contact</a>
+                            <a href="about.html" class="nav-item nav-link text-primary">About Us</a>
+                        </div>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for products">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-transparent text-primary">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="btn-group ml-lg-5">
+                            <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="login.html">
+                                    <button class="dropdown-item" type="button" href="login.html">Sign up</button> </div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="cart.html" class="btn px-0 ml-xl-5">
+                        <i class="fas fa-shopping-cart text-primary"></i>
+                        <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+
+            </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+
     <form class="box" action="login.html" method="POST">
 
         <h1>
-            sign up
+            Sign Up
         </h1>
         <input type="text" name="" placeholder="Enter First Name" id="first">
         <input type="text" name="" placeholder="Enter Last Name" id="last">
