@@ -3,12 +3,11 @@ function validate() {
     var password = document.getElementById("password").value;
     var first = document.getElementById("first").value;
     if (username == "akhilvemuri26@gmail.com" && password == "password") {
-        alert("Logged in succesfully, Welcome to Etail, " + first + "!");
+        if (confirm(("Logged in succesfully, Welcome to Etail, " + first + "!"))) {
+            location.href = 'index.html'
+        }
         return false;
-
     } else {
         alert("login failed");
     }
-
-
 }
