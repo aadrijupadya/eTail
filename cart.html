@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+   
+   
     <meta charset="utf-8">
     <title>The future of retail: Shop eTail</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -24,6 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/cart/cart.js"> async</script>
 </head>
 
 <body class="bg-cream">
@@ -105,109 +108,115 @@
                     </thead>
                     <tbody class="align-middle">
                         <tr>
+                           
+
                             <td class="align-middle"><img src="img/product-1.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">$150</td>
+                            <td class="align-middle">450</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
+                                        <button class="btn btn-sm btn-primary btn-minus" onclick="calculatePrice()">
                                         <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
+                                    <input type="text"  id="Pranav1" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
+                                        <button class="btn btn-sm btn-primary btn-plus" onclick="calculateTotalPrice()">
                                             <i class="fa fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                            <td id="Price1" class="align-middle">450</td>
+                            <td class="align-middle"><button onclick="Geeks(1)">Remove</button></td>
                         </tr>
                         <tr>
+                            
                             <td class="align-middle"><img src="img/product-2.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">$150</td>
+                            <td class="align-middle">30</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
+                                        <button class="btn btn-sm btn-primary btn-minus" onclick="calculatePrice1()">
                                         <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
+                                    <input type="text"  id="Pranav2" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
+                                        <button class="btn btn-sm btn-primary btn-plus" onclick="calculateTotalPrice1()">
                                             <i class="fa fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                            <td id="Price2" class="align-middle">30</td>
+                            <td class="align-middle"><button onclick="Geeks(2)">Remove</button></td>
                         </tr>
                         <tr>
+                           
                             <td class="align-middle"><img src="img/product-3.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">$150</td>
+                            <td class="align-middle">50</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
+                                        <button class="btn btn-sm btn-primary btn-minus" onclick="calculatePrice2()"> 
                                         <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
+                                    <input type="text" id="Pranav3" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
+                                        <button class="btn btn-sm btn-primary btn-plus" onclick="calculateTotalPrice2()">
                                             <i class="fa fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                            <td id="Price3" class="align-middle">50</td>
+                            <td class="align-middle"><button onclick="Geeks(3)">Remove</button></td>
                         </tr>
                         <tr>
+                           
                             <td class="align-middle"><img src="img/product-4.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">$150</td>
+                            <td class="align-middle">90</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
+                                        <button class="btn btn-sm btn-primary btn-minus" onclick="calculatePrice3()">
                                         <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
+                                    <input type="text"  id="Pranav4" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
+                                        <button class="btn btn-sm btn-primary btn-plus" onclick="calculateTotalPrice3()">
                                             <i class="fa fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                            <td id="Price4" class="align-middle">90</td>
+                            <td class="align-middle"><button onclick="Geeks(4)">Remove</button></td>
                         </tr>
                         <tr>
+                            
                             <td class="align-middle"><img src="img/product-5.jpg" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">$150</td>
+                            <td class="align-middle">200</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
+                                        <button class="btn btn-sm btn-primary btn-minus" onclick="calculatePrice4()">
                                         <i class="fa fa-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
+                                    <input type="text"  id="Pranav5" class="form-control form-control-sm bg-cream border-0 text-center" value="1">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
+                                        <button class="btn btn-sm btn-primary btn-plus" onclick="calculateTotalPrice4()">
                                             <i class="fa fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">$150</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                            <td id="Price5" class="align-middle">200</td>
+                            <td class="align-middle"><button onclick="Geeks(5)">Remove</button></td>
                         </tr>
                     </tbody>
                 </table>
