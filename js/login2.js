@@ -6,7 +6,6 @@ function validate() {
         if (confirm(("Logged in succesfully, Welcome to Etail, " + first + "!"))) {
             location.href = 'pref.html'
         }
-        return false;
     } else {
         alert("login failed");
     }
