@@ -4656,7 +4656,7 @@ input[type="button"].btn-block {
 .card2 {
     position: relative;
     padding: 10px;
-    left: 350px;
+    left: 75px;
     display: justify;
     flex-direction: column;
     min-width: 0;
@@ -10112,4 +10112,3 @@ h6 {
         transform: translateY(-15px);
     }
 }
-
